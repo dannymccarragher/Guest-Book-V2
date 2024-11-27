@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <h1>Guestbook Entries</h1>
+
+    <% if (data.length > 0) { %>
+        <ul>
+            <% for (let i = 0; i < data.length; i++) { %>
+                <li>
+                    <strong>Name:</strong> <%= data[i].firstName %> <%= data[i].lastName %> <br>
+                    <strong>Job Title:</strong> <%= data[i].job %> <br>
+                    <strong>Company:</strong> <%= data[i].company %> <br>
+                    <strong>LinkedIn:</strong> <%= data[i].linkedin %> <br>
+                    <strong>Email:</strong> <%= data[i].email %> <br>
+                    <strong>Meeting Source:</strong> <%= data[i].meeting %> <br>
+                    <strong>Message:</strong> <%= data[i].message %>
+                </li>
+                <hr>
+            <% } %>
+        </ul>
+    <% } else { %>
+        <p>No entries found in the guestbook.</p>
+    <% } %>
+    
+</body>
+</html>

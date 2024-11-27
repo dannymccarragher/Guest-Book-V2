@@ -1,0 +1,160 @@
+#main {
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+}
+
+.form-group input {
+    border: 1px solid gray;
+    height: 30px;
+    border-radius: .25rem;
+}
+
+.form-group select {
+    border: 1px solid gray;
+    height: 30px;
+    border-radius: .25rem;
+}
+
+textarea {
+    border: 1px solid gray;
+    height: 30px;
+    border-radius: .25rem;
+    padding-right: 5px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+
+.form-group {
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 0;
+    padding: 1rem;
+    margin-bottom: .25rem;
+    border-radius: .25rem;
+    margin: 1rem;
+}
+
+#personal-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#personal-form .form-group {
+    width: 32%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+label {
+    font-weight: 700;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#meeting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+#meeting select {
+    width: 100%;
+}
+
+#meeting .form-group {
+    width: 100%;
+}
+
+#message-label {
+    margin: 0rem 1rem;
+}
+
+
+.form-group textarea {
+    box-sizing: border-box;
+    width: 96.5%;
+    height: 75px;
+    margin-left: 1rem;
+    resize: none;
+}
+
+#mailing {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#mailing-list-checkbox {
+    width: auto;
+}
+
+#mailing-list-label {
+    padding-left: 15px;
+}
+
+#email-format-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem;
+    display: none;
+}
+
+button {
+    display: block;
+    padding: 10px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: .25rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.err{
+    display: none; 
+    color: red;
+    font-weight: 500;
+}
+
+#other {
+    display: none;
+}
