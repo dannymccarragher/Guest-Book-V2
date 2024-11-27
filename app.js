@@ -1,6 +1,5 @@
 const express = require('express');
 const mariadb = require('mariadb');
-const { title } = require('process');
 const app = express();
 
 const PORT = 3000;
